@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Project1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/index.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <h1 class="home_name">1001830833</h1>
+  <h1 class="home_name">Madugula Giridhar Reddy</h1>
+  
+  <div class="container">
+
+    <ul class="nav nav-tabs">
+      <li class="active" id=#nav_tab><a data-toggle="tab" href="#Home">Home</a></li>
+      <!-- <li id=#nav_tab><a data-toggle="tab" href="#uploads">Uploads</a></li> -->
+    </ul>
+
+    <div class="tab-content">
+      <div id="Home" class="tab-pane fade in active">
+        <!-- <p class="Home_heading">Various ways to search</p> -->
+
+
+        <form method="GET" action="/question7">
+          <h4><b>Enter country code</b></h4>
+          <input type="text" name="code_name" placeholder="Enter code" id="code_name" required>
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form>
+
+
+        <form method="POST" action="/question8">
+          <br> <br> <br>
+          <h4><b> Entered year  range</b></h4>
+          <input type="text" name="year1" placeholder="Enter year 1" required>
+          <input type="text" name="year2" placeholder="Enter year 2" required>          
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form>
+
+
+        <form method="POST" action="/question9">
+          <br> <br> <br>
+          <h4><b> Entered smokers  range</b></h4>
+          <input type="text" name="year1" placeholder="Enter smoker range" required>
+          <input type="text" name="year2" placeholder="Enter smoker range" required>          
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form>
+
+
+        <form method="POST" action="/question10">
+          <br> <br> <br>
+          <h4><b>Enter number for query limit and latitude  range</b></h4>
+          <input type="text" name="range" placeholder="Enter number" required>
+          <input type="text" name="year1" placeholder="Enter year 1" required>
+          <input type="text" name="year2" placeholder="Enter year 2" required>          
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form>
+
+        <form method="POST" action="/question10_2">
+          <br> <br> <br>
+          <h4><b> Enter number for query limit and smokers  range</b></h4>
+          <input type="text" name="range" placeholder="Enter number" required>
+          <input type="text" name="year1" placeholder="Enter smoker range" required>
+          <input type="text" name="year2" placeholder="Enter smoker range" required>          
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form>
+
+        <form method="POST" action="/question11">
+          <br> <br> <br>
+          <h4><b>Enter number for query limit and latitude  range using cache</b></h4>
+          <input type="text" name="range" placeholder="Enter number" required>
+          <input type="text" name="year1" placeholder="Enter year 1" required>
+          <input type="text" name="year2" placeholder="Enter year 2" required>          
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form>
+
+
+        <!-- <form method="GET" action="/show_top_quakes">
+          <h4><b>Enter number to show largest quakes</b></h4>
+          <input type="text" name="quake_limit" placeholder="Enter max value" id="quake_limit" required>
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form> -->
+
+
+
+
+<!-- 
+        <form method="GET" action="/show_top_quakes_cache">
+          <h4><b>Enter number to show largest quakes cache</b></h4>
+          <input type="text" name="quake_limit" placeholder="Enter max value" id="quake_limit" required>
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form> -->
+
+
+        <!-- <form method="POST" action="/quakes_range">
+          <br> <br> <br>
+          <h4><b> Entered latitude  range</b></h4>
+          <input type="text" name="latitude1" placeholder="Enter latitude 1" required>
+          <input type="text" name="latitude2" placeholder="Enter latitude 2" required>          
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form>
+
+        <br> <br> <br> -->
+
+
+        <!-- <form method="POST" action="/quakes_range_cache">
+          <br> <br> <br>
+          <h4><b> Entered latitude  range cache</b></h4>
+          <input type="text" name="latitude1" placeholder="Enter latitude 1" required>
+          <input type="text" name="latitude2" placeholder="Enter latitude 2" required>          
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form> -->
+
+        <br> <br> <br>
+
+        <!-- <form method="POST" action="/random_range">
+          <br> <br> <br>
+          <h4><b>Enter number for query limit and latitude  range</b></h4>
+          <input type="text" name="range" placeholder="Enter number" required>
+          <input type="text" name="latitude1" placeholder="Enter latitude 1" required>
+          <input type="text" name="latitude2" placeholder="Enter latitude 2" required>          
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form> -->
+
+
+        <!-- <form method="POST" action="/random_range_cache">
+          <br> <br> <br>
+          <h4><b>Enter number for query limit and latitude  range</b></h4>
+          <input type="text" name="range" placeholder="Enter number" required>
+          <input type="text" name="latitude1" placeholder="Enter latitude 1" required>
+          <input type="text" name="latitude2" placeholder="Enter latitude 2" required>          
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form> -->
+
+        <!-- <form  method="POST" action="/quakes_date" >
+          <h4><b>Enter start date , End date and largest magnitude value</b></h4>          
+           <input type="date" id="date1" placeholder="Enter Start date"  name="date1" required>          
+          <input type="date" id="date2" placeholder="Enter End date"  name="date2" required>          
+          <input type="text" id="mag" placeholder="Enter largest  Magnitude"  name="mag" required>
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form> -->
+
+        <br> <br> <br>
+        
+        
+        <!-- <form  method="POST" action="/most_recent_data" >
+          <h4><b>Enter the number for recent data</b></h4>          
+           <input type="text" id="days" placeholder="Enter no of recent days"  name="days" required>                   
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form> -->
+
+        <br> <br> <br>
+
+        <!-- <form  method="POST" action="/more_common_quakes" >
+          <h4><b>To get more common quakes enter below details</b></h4>   
+          <br>       
+          <label for="latitude1">latitude1</label>
+           <input type="text" id="latitude1" placeholder="Enter origin latitude"  name="latitude1" required>          
+           <label for="longitude1">longitude1</label>
+          <input type="text" id="longitude1" placeholder="Enter origin longitude "  name="longitude1" required>    
+          <label for="latitude2">latitude2</label>      
+          <input type="text" id="latitude2" placeholder="Enter destination latitude "  name="latitude2" required>          
+          <label for="longitude2">longitude2</label>      
+          <input type="text" id="longitude2" placeholder="Enter destination longitude "  name="longitude2" required>  
+          <br><br>       
+          <label for="range">Range</label>      
+          <input type="text" id="range" placeholder="Enter range"  name="range" required>
+          <br>
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form>
+
+        <br> <br> <br> -->
+
+
+
+        <!-- <form  method="POST" action="/largest_quake_range" >
+          <h4><b>Enter latitude , longitude and range to get largest quake within the range</b></h4>          
+           <input type="text" id="latitude" placeholder="Enter latitude"  name="latitude" required>          
+          <input type="text" id="longitude" placeholder="Enter longitude"  name="longitude" required>          
+          <input type="text" id="mag" placeholder="Enter range"  name="range" required>
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form> -->
+
+         <!-- <form  method="POST" action="/largest_quake_range" >
+          <h4><b>Enter part of location name and distance</b></h4>          
+           <input type="text" id="location" placeholder="Enter location"  name="location" required>          
+          <input type="text" id="mag" placeholder="Enter mag"  name="mag" required>
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form>
+
+
+        <br> <br> <br>
+
+        <form  method="POST" action="/largest_quake_range" >
+          <h4><b>Enter part of location name and range</b></h4>          
+           <input type="text" id="location" placeholder="Enter location"  name="location" required>          
+          <input type="text" id="mag" placeholder="Enter range"  name="range" required>
+          <button type="submit" value='search' class="btn btn-primary">Search</button>
+        </form> -->
+
+      <!-- </div>
+      <div id="uploads" class="tab-pane fade">
+        <p class="Home_heading">Uploads</p>
+        <h4><b>Upload CSV file.</b></h4><br>
+        <input type="file" id="myFile" name="filename"><br>
+        <button type="button" class="btn btn-primary">Submit</button>
+        <br> <br> <br>
+        <form method="POST" action="/upload_image">
+          <h4><b>Upload Images </b></h4><br>
+          <input type="file" id="myFile" name="filename"><br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>  -->
+
+
+
+
+</body>
+
+</html>

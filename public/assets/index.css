@@ -1,0 +1,23 @@
+
+body{
+	color:blue;
+}
+
+.profile{
+	color: red;
+}
+table, th, td {
+	border: 1px solid black;
+	padding: 10px;
+  }
+
+  .home_name{
+	  text-align: center;
+  }
+
+  .Home_heading{
+	color:grey;
+	height: 75px;
+	font-size: 45px;
+	font-family: italic;
+}

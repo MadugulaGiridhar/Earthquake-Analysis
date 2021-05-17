@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/index.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+</head>
+<body>	
+    <!-- <h1 class="profile">the user name is <%= data.Name %> and Salary is <%= data.Salary %></h1> -->
+
+    <h1>The total time taken is:<%= data[data.length-1].Totaltime%></h1>
+    <table>      
+      <% for(var i=0; i < data.length-1; i++) { %>
+      <tr>
+        <td>  <%= i+1 %></td>                
+        <% for(var j=0; j < data[0].length; j++) { %>
+            <td> Count:<%= data[0][j].count.value %></td>                        
+            <td>  Entity:  <%= data[0][j].Entity.value %></td>                                                
+            <td> </td>                                                
+            
+            <% } %>  
+        
+      
+      <% } %>
+    </table>        
+    </body>
+    </html>
